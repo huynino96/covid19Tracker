@@ -4,7 +4,7 @@ import React from 'react';
 // import Chart from './components/Chart/Chart';
 // import CountryPicker from './components/CountryPicker/CountryPicker';
 
-import {Cards, Chart, CountryPicker} from './components';
+import {Cards, Chart, CountryPicker, Navbar, Feature, Fact} from './components';
 import styles from './App.module.css';
 import {fetchData} from './api/';
 
@@ -34,13 +34,29 @@ class App extends React.Component {
 
         return(
             
-            <div className={styles.container}>
+            
+                    
+                <div className={styles.container}>
+                {/* <Navbar/> */}
                 <img className={styles.image} src={coronaImage} alt="COVID-19"/>
-                <Cards data={data}/>
-                <CountryPicker handleCountryChange={this.handleCountryChange}/>
-                <Chart data={data} country={country}/>
                 
-            </div>
+                <br/><br/>
+                
+                <br/>
+                <Fact/>
+                <br/>
+                <Feature/>
+                <br/><br/>
+                <CountryPicker handleCountryChange={this.handleCountryChange}/>
+                <br/>
+                <Cards data={data}/>
+                
+                <br/><br/>
+                <Chart data={data} country={country}/>
+                </div>
+        
+            
+            
         )
     }
 }
