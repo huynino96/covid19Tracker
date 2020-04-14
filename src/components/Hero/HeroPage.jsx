@@ -16,9 +16,9 @@ const HeroPage = () => {
       bg="black"
       bgOpacity={0.5}
     >
-      <Heading>Covid-19 Data</Heading>
+      <Heading>Covid-19 Data Collector</Heading>
       <br/><br/>
-      <Subhead fontSize={[2, 3]}>Collected Data of Covid-19</Subhead>
+      <Subhead fontSize={[2, 3]}>Collecting Data of Covid-19</Subhead>
       {/* <Flex mt={3}>
         <CallToAction bg="grey" mr={3}>
           Secondary Action
