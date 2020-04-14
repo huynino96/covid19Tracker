@@ -17,9 +17,9 @@ const Fact = () => {
       <CardTitle
         style={{
           color: "#fff",
-          height: "500px",
+          height: "400px",
           background:
-            "url(https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2020/2/26/95d3056d580c43bdb53c4f328155a590_18.jpg) center / cover",
+            "url(https://s7148.pcdn.co/wp-content/uploads/COVID19-800x450-1.jpg) center / cover",
         }}
       >
         Facts
