@@ -4,7 +4,7 @@ import React from 'react';
 // import Chart from './components/Chart/Chart';
 // import CountryPicker from './components/CountryPicker/CountryPicker';
 
-import {Cards, Chart, CountryPicker, Navbar, Feature, Fact} from './components';
+import {Cards, Chart, CountryPicker, Feature, Fact, HeroPage, FooterPage} from './components';
 import styles from './App.module.css';
 import {fetchData} from './api/';
 
@@ -35,9 +35,11 @@ class App extends React.Component {
         return(
             
             
-                    
+            <div>
+                    <HeroPage/>
                 <div className={styles.container}>
                 {/* <Navbar/> */}
+                
                 <img className={styles.image} src={coronaImage} alt="COVID-19"/>
                 
                 <br/><br/>
@@ -53,6 +55,9 @@ class App extends React.Component {
                 
                 <br/><br/>
                 <Chart data={data} country={country}/>
+                </div>
+                <br/><br/>
+                <FooterPage/>
                 </div>
         
             
