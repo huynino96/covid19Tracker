@@ -18,7 +18,7 @@ const generateOptions = (data) => {
       categories: categories,
       crosshair: true,
     },
-    colors: ['#F3585B'],
+    colors: ['#ff0000'],
     yAxis: {
       min: 0,
       title: {
